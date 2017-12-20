@@ -1,7 +1,7 @@
 <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
 
     <div class="modal-header">
-        <h4 class="modal-title" id="myAulaLabel" jhiTranslate="aawAula3App.aula.home.createOrEditLabel">Create or edit a Aula</h4>
+        <h4 class="modal-title" id="myAulaLabel" jhiTranslate="aula3App.aula.home.createOrEditLabel">Create or edit a Aula</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 (click)="clear()">&times;</button>
     </div>
@@ -13,18 +13,18 @@
                    [(ngModel)]="aula.id" readonly />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.aula.horarioInicial" for="field_horarioInicial">Horario Inicial</label>
+            <label class="form-control-label" jhiTranslate="aula3App.aula.horarioInicial" for="field_horarioInicial">Horario Inicial</label>
             <input type="text" class="form-control" name="horarioInicial" id="field_horarioInicial"
                 [(ngModel)]="aula.horarioInicial" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.aula.horarioFinal" for="field_horarioFinal">Horario Final</label>
+            <label class="form-control-label" jhiTranslate="aula3App.aula.horarioFinal" for="field_horarioFinal">Horario Final</label>
             <input type="text" class="form-control" name="horarioFinal" id="field_horarioFinal"
                 [(ngModel)]="aula.horarioFinal" />
         </div>
 
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.aula.turma" for="field_turma">Turma</label>
+            <label class="form-control-label" jhiTranslate="aula3App.aula.turma" for="field_turma">Turma</label>
             <select class="form-control" id="field_turma" name="turma" [(ngModel)]="aula.turma" >
                 <option [ngValue]="null"></option>
                 <option [ngValue]="turmaOption.id === aula.turma?.id ? aula.turma : turmaOption" *ngFor="let turmaOption of turmas; trackBy: trackTurmaById">{{turmaOption.id}}</option>

@@ -20,13 +20,6 @@
             "otherEntityRelationshipName": "aluno"
         },
         {
-            "relationshipType": "one-to-one",
-            "relationshipName": "usuario",
-            "otherEntityName": "usuario",
-            "ownerSide": false,
-            "otherEntityRelationshipName": "aluno"
-        },
-        {
             "relationshipType": "many-to-one",
             "relationshipName": "turma",
             "otherEntityName": "turma",
@@ -55,7 +48,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171220204943",
+    "changelogDate": "20171220225219",
     "entityTableName": "aluno",
     "dto": "no",
     "pagination": "no",

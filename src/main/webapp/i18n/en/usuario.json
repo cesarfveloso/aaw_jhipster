@@ -1,5 +1,5 @@
 {
-    "aawAula3App": {
+    "aula3App": {
         "usuario" : {
             "home": {
                 "title": "Usuarios",
@@ -17,8 +17,6 @@
             },
             "cpf": "Cpf",
             "ativo": "Ativo",
-            "aluno": "Aluno",
-            "professor": "Professor",
             "permissao": "Permissao"
         }
     }

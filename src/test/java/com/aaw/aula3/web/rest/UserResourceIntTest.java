@@ -1,6 +1,6 @@
 package com.aaw.aula3.web.rest;
 
-import com.aaw.aula3.AawAula3App;
+import com.aaw.aula3.Aula3App;
 import com.aaw.aula3.domain.Authority;
 import com.aaw.aula3.domain.User;
 import com.aaw.aula3.repository.UserRepository;
@@ -44,7 +44,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see UserResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = AawAula3App.class)
+@SpringBootTest(classes = Aula3App.class)
 public class UserResourceIntTest {
 
     private static final String DEFAULT_LOGIN = "johndoe";

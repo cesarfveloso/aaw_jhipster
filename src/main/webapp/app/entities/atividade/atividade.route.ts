@@ -12,7 +12,7 @@ export const atividadeRoute: Routes = [
         component: AtividadeComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.atividade.home.title'
+            pageTitle: 'aula3App.atividade.home.title'
         },
         canActivate: [UserRouteAccessService]
     }, {
@@ -20,7 +20,7 @@ export const atividadeRoute: Routes = [
         component: AtividadeDetailComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.atividade.home.title'
+            pageTitle: 'aula3App.atividade.home.title'
         },
         canActivate: [UserRouteAccessService]
     }
@@ -32,7 +32,7 @@ export const atividadePopupRoute: Routes = [
         component: AtividadePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.atividade.home.title'
+            pageTitle: 'aula3App.atividade.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -42,7 +42,7 @@ export const atividadePopupRoute: Routes = [
         component: AtividadePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.atividade.home.title'
+            pageTitle: 'aula3App.atividade.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -52,7 +52,7 @@ export const atividadePopupRoute: Routes = [
         component: AtividadeDeletePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.atividade.home.title'
+            pageTitle: 'aula3App.atividade.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'

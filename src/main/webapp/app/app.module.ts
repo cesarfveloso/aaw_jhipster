@@ -4,12 +4,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Ng2Webstorage } from 'ngx-webstorage';
 
-import { AawAula3SharedModule, UserRouteAccessService } from './shared';
-import { AawAula3AppRoutingModule} from './app-routing.module';
-import { AawAula3HomeModule } from './home/home.module';
-import { AawAula3AdminModule } from './admin/admin.module';
-import { AawAula3AccountModule } from './account/account.module';
-import { AawAula3EntityModule } from './entities/entity.module';
+import { Aula3SharedModule, UserRouteAccessService } from './shared';
+import { Aula3AppRoutingModule} from './app-routing.module';
+import { Aula3HomeModule } from './home/home.module';
+import { Aula3AdminModule } from './admin/admin.module';
+import { Aula3AccountModule } from './account/account.module';
+import { Aula3EntityModule } from './entities/entity.module';
 import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
 
@@ -28,13 +28,13 @@ import {
 @NgModule({
     imports: [
         BrowserModule,
-        AawAula3AppRoutingModule,
+        Aula3AppRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
-        AawAula3SharedModule,
-        AawAula3HomeModule,
-        AawAula3AdminModule,
-        AawAula3AccountModule,
-        AawAula3EntityModule,
+        Aula3SharedModule,
+        Aula3HomeModule,
+        Aula3AdminModule,
+        Aula3AccountModule,
+        Aula3EntityModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [
@@ -53,4 +53,4 @@ import {
     ],
     bootstrap: [ JhiMainComponent ]
 })
-export class AawAula3AppModule {}
+export class Aula3AppModule {}

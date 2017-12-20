@@ -49,10 +49,6 @@ public class Aluno implements Serializable {
     @JsonIgnore
     private Set<Entrega> entregas = new HashSet<>();
 
-    @OneToOne(mappedBy = "aluno")
-    @JsonIgnore
-    private Usuario usuario;
-
     @ManyToOne
     private Turma turma;
 
@@ -203,19 +199,6 @@ public class Aluno implements Serializable {
 
     public void setEntregas(Set<Entrega> entregas) {
         this.entregas = entregas;
-    }
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public Aluno usuario(Usuario usuario) {
-        this.usuario = usuario;
-        return this;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
     }
 
     public Turma getTurma() {

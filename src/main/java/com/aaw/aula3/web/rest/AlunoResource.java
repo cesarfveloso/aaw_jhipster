@@ -17,8 +17,6 @@ import java.net.URISyntaxException;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 /**
  * REST controller for managing Aluno.
@@ -82,19 +80,11 @@ public class AlunoResource {
     /**
      * GET  /alunos : get all the alunos.
      *
-     * @param filter the filter of the request
      * @return the ResponseEntity with status 200 (OK) and the list of alunos in body
      */
     @GetMapping("/alunos")
     @Timed
-    public List<Aluno> getAllAlunos(@RequestParam(required = false) String filter) {
-        if ("usuario-is-null".equals(filter)) {
-            log.debug("REST request to get all Alunos where usuario is null");
-            return StreamSupport
-                .stream(alunoRepository.findAll().spliterator(), false)
-                .filter(aluno -> aluno.getUsuario() == null)
-                .collect(Collectors.toList());
-        }
+    public List<Aluno> getAllAlunos() {
         log.debug("REST request to get all Alunos");
         return alunoRepository.findAll();
         }

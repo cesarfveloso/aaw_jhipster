@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed, async, inject, fakeAsync, tick } from '@angu
 import { Observable } from 'rxjs/Rx';
 import { Headers } from '@angular/http';
 
-import { AawAula3TestModule } from '../../../test.module';
+import { Aula3TestModule } from '../../../test.module';
 import { Principal } from '../../../../../../main/webapp/app/shared';
 import { UserMgmtComponent } from '../../../../../../main/webapp/app/admin/user-management/user-management.component';
 import { UserService, User } from '../../../../../../main/webapp/app/shared';
@@ -17,7 +17,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [AawAula3TestModule],
+                imports: [Aula3TestModule],
                 declarations: [UserMgmtComponent],
                 providers: [
                     UserService

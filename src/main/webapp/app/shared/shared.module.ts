@@ -2,8 +2,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { DatePipe } from '@angular/common';
 
 import {
-    AawAula3SharedLibsModule,
-    AawAula3SharedCommonModule,
+    Aula3SharedLibsModule,
+    Aula3SharedCommonModule,
     CSRFService,
     AuthServerProvider,
     AccountService,
@@ -18,8 +18,8 @@ import {
 
 @NgModule({
     imports: [
-        AawAula3SharedLibsModule,
-        AawAula3SharedCommonModule
+        Aula3SharedLibsModule,
+        Aula3SharedCommonModule
     ],
     declarations: [
         JhiLoginModalComponent,
@@ -38,7 +38,7 @@ import {
     ],
     entryComponents: [JhiLoginModalComponent],
     exports: [
-        AawAula3SharedCommonModule,
+        Aula3SharedCommonModule,
         JhiLoginModalComponent,
         HasAnyAuthorityDirective,
         DatePipe
@@ -46,4 +46,4 @@ import {
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
 })
-export class AawAula3SharedModule {}
+export class Aula3SharedModule {}

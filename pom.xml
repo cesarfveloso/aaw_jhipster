@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.aaw.aula3</groupId>
-    <artifactId>aaw-aula-3</artifactId>
+    <artifactId>aula-3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Aaw Aula 3</name>
+    <name>Aula 3</name>
 
     <properties>
         <!-- Build properties -->
@@ -507,9 +507,9 @@
                     <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
                     <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                     <driver>org.h2.Driver</driver>
-                    <url>jdbc:h2:file:./target/h2db/db/aaw_aula3</url>
+                    <url>jdbc:h2:file:./target/h2db/db/aula3</url>
                     <defaultSchemaName></defaultSchemaName>
-                    <username>aaw_aula3</username>
+                    <username>aula3</username>
                     <password></password>
                     <referenceUrl>hibernate:spring:com.aaw.aula3.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                     <verbose>true</verbose>
@@ -576,7 +576,7 @@
                 </executions>
                 -->
                 <configuration>
-                    <repository>aaw_aula3</repository>
+                    <repository>aula3</repository>
                     <tag>latest</tag>
                     <contextDirectory>${project.build.directory}</contextDirectory>
                 </configuration>

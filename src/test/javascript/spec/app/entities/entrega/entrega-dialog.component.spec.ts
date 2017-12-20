@@ -4,7 +4,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs/Rx';
 import { JhiEventManager } from 'ng-jhipster';
 
-import { AawAula3TestModule } from '../../../test.module';
+import { Aula3TestModule } from '../../../test.module';
 import { EntregaDialogComponent } from '../../../../../../main/webapp/app/entities/entrega/entrega-dialog.component';
 import { EntregaService } from '../../../../../../main/webapp/app/entities/entrega/entrega.service';
 import { Entrega } from '../../../../../../main/webapp/app/entities/entrega/entrega.model';
@@ -22,7 +22,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [AawAula3TestModule],
+                imports: [Aula3TestModule],
                 declarations: [EntregaDialogComponent],
                 providers: [
                     AlunoService,

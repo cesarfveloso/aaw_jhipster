@@ -12,7 +12,7 @@ export const usuarioRoute: Routes = [
         component: UsuarioComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.usuario.home.title'
+            pageTitle: 'aula3App.usuario.home.title'
         },
         canActivate: [UserRouteAccessService]
     }, {
@@ -20,7 +20,7 @@ export const usuarioRoute: Routes = [
         component: UsuarioDetailComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.usuario.home.title'
+            pageTitle: 'aula3App.usuario.home.title'
         },
         canActivate: [UserRouteAccessService]
     }
@@ -32,7 +32,7 @@ export const usuarioPopupRoute: Routes = [
         component: UsuarioPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.usuario.home.title'
+            pageTitle: 'aula3App.usuario.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -42,7 +42,7 @@ export const usuarioPopupRoute: Routes = [
         component: UsuarioPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.usuario.home.title'
+            pageTitle: 'aula3App.usuario.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -52,7 +52,7 @@ export const usuarioPopupRoute: Routes = [
         component: UsuarioDeletePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.usuario.home.title'
+            pageTitle: 'aula3App.usuario.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'

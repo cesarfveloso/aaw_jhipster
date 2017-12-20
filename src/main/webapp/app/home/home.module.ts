@@ -1,13 +1,13 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { AawAula3SharedModule } from '../shared';
+import { Aula3SharedModule } from '../shared';
 
 import { HOME_ROUTE, HomeComponent } from './';
 
 @NgModule({
     imports: [
-        AawAula3SharedModule,
+        Aula3SharedModule,
         RouterModule.forChild([ HOME_ROUTE ])
     ],
     declarations: [
@@ -19,4 +19,4 @@ import { HOME_ROUTE, HomeComponent } from './';
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AawAula3HomeModule {}
+export class Aula3HomeModule {}

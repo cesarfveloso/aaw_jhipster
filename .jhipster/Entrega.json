@@ -24,7 +24,7 @@
             "fieldType": "Boolean"
         }
     ],
-    "changelogDate": "20171220204949",
+    "changelogDate": "20171220225225",
     "entityTableName": "entrega",
     "dto": "no",
     "pagination": "no",

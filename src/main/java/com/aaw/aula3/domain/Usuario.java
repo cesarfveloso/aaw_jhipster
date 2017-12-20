@@ -25,14 +25,6 @@ public class Usuario implements Serializable {
     @Column(name = "ativo")
     private Boolean ativo;
 
-    @OneToOne
-    @JoinColumn(unique = true)
-    private Aluno aluno;
-
-    @OneToOne
-    @JoinColumn(unique = true)
-    private Professor professor;
-
     @ManyToOne
     private Permissao permissao;
 
@@ -69,32 +61,6 @@ public class Usuario implements Serializable {
 
     public void setAtivo(Boolean ativo) {
         this.ativo = ativo;
-    }
-
-    public Aluno getAluno() {
-        return aluno;
-    }
-
-    public Usuario aluno(Aluno aluno) {
-        this.aluno = aluno;
-        return this;
-    }
-
-    public void setAluno(Aluno aluno) {
-        this.aluno = aluno;
-    }
-
-    public Professor getProfessor() {
-        return professor;
-    }
-
-    public Usuario professor(Professor professor) {
-        this.professor = professor;
-        return this;
-    }
-
-    public void setProfessor(Professor professor) {
-        this.professor = professor;
     }
 
     public Permissao getPermissao() {

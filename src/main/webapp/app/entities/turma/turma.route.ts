@@ -12,7 +12,7 @@ export const turmaRoute: Routes = [
         component: TurmaComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.turma.home.title'
+            pageTitle: 'aula3App.turma.home.title'
         },
         canActivate: [UserRouteAccessService]
     }, {
@@ -20,7 +20,7 @@ export const turmaRoute: Routes = [
         component: TurmaDetailComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.turma.home.title'
+            pageTitle: 'aula3App.turma.home.title'
         },
         canActivate: [UserRouteAccessService]
     }
@@ -32,7 +32,7 @@ export const turmaPopupRoute: Routes = [
         component: TurmaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.turma.home.title'
+            pageTitle: 'aula3App.turma.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -42,7 +42,7 @@ export const turmaPopupRoute: Routes = [
         component: TurmaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.turma.home.title'
+            pageTitle: 'aula3App.turma.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -52,7 +52,7 @@ export const turmaPopupRoute: Routes = [
         component: TurmaDeletePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.turma.home.title'
+            pageTitle: 'aula3App.turma.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'

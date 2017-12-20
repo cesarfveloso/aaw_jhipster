@@ -12,7 +12,7 @@ export const aulaRoute: Routes = [
         component: AulaComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.aula.home.title'
+            pageTitle: 'aula3App.aula.home.title'
         },
         canActivate: [UserRouteAccessService]
     }, {
@@ -20,7 +20,7 @@ export const aulaRoute: Routes = [
         component: AulaDetailComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.aula.home.title'
+            pageTitle: 'aula3App.aula.home.title'
         },
         canActivate: [UserRouteAccessService]
     }
@@ -32,7 +32,7 @@ export const aulaPopupRoute: Routes = [
         component: AulaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.aula.home.title'
+            pageTitle: 'aula3App.aula.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -42,7 +42,7 @@ export const aulaPopupRoute: Routes = [
         component: AulaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.aula.home.title'
+            pageTitle: 'aula3App.aula.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -52,7 +52,7 @@ export const aulaPopupRoute: Routes = [
         component: AulaDeletePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.aula.home.title'
+            pageTitle: 'aula3App.aula.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'

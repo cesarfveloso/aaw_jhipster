@@ -28,7 +28,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171220204944",
+    "changelogDate": "20171220225220",
     "entityTableName": "falta",
     "dto": "no",
     "pagination": "no",

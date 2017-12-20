@@ -1,6 +1,6 @@
 package com.aaw.aula3.web.rest;
 
-import com.aaw.aula3.AawAula3App;
+import com.aaw.aula3.Aula3App;
 import com.aaw.aula3.domain.User;
 import com.aaw.aula3.repository.UserRepository;
 import com.aaw.aula3.security.jwt.TokenProvider;
@@ -32,7 +32,7 @@ import static org.hamcrest.Matchers.not;
  * @see UserJWTController
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = AawAula3App.class)
+@SpringBootTest(classes = Aula3App.class)
 public class UserJWTControllerIntTest {
 
     @Autowired

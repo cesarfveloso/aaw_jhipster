@@ -1,12 +1,9 @@
 package com.aaw.aula3.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.Objects;
 
 /**
@@ -30,20 +27,6 @@ public class Professor implements Serializable {
 
     @Column(name = "area_conhecimento")
     private String areaConhecimento;
-
-    @OneToMany(mappedBy = "professor")
-    @JsonIgnore
-    private Set<Disciplina> disciplinas = new HashSet<>();
-
-    @ManyToMany
-    @JoinTable(name = "professor_professor",
-               joinColumns = @JoinColumn(name="professors_id", referencedColumnName="id"),
-               inverseJoinColumns = @JoinColumn(name="professors_id", referencedColumnName="id"))
-    private Set<Disciplina> professors = new HashSet<>();
-
-    @OneToOne(mappedBy = "professor")
-    @JsonIgnore
-    private Usuario usuario;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
@@ -91,69 +74,6 @@ public class Professor implements Serializable {
 
     public void setAreaConhecimento(String areaConhecimento) {
         this.areaConhecimento = areaConhecimento;
-    }
-
-    public Set<Disciplina> getDisciplinas() {
-        return disciplinas;
-    }
-
-    public Professor disciplinas(Set<Disciplina> disciplinas) {
-        this.disciplinas = disciplinas;
-        return this;
-    }
-
-    public Professor addDisciplina(Disciplina disciplina) {
-        this.disciplinas.add(disciplina);
-        disciplina.setProfessor(this);
-        return this;
-    }
-
-    public Professor removeDisciplina(Disciplina disciplina) {
-        this.disciplinas.remove(disciplina);
-        disciplina.setProfessor(null);
-        return this;
-    }
-
-    public void setDisciplinas(Set<Disciplina> disciplinas) {
-        this.disciplinas = disciplinas;
-    }
-
-    public Set<Disciplina> getProfessors() {
-        return professors;
-    }
-
-    public Professor professors(Set<Disciplina> disciplinas) {
-        this.professors = disciplinas;
-        return this;
-    }
-
-    public Professor addProfessor(Disciplina disciplina) {
-        this.professors.add(disciplina);
-        disciplina.getDisciplinas().add(this);
-        return this;
-    }
-
-    public Professor removeProfessor(Disciplina disciplina) {
-        this.professors.remove(disciplina);
-        disciplina.getDisciplinas().remove(this);
-        return this;
-    }
-
-    public void setProfessors(Set<Disciplina> disciplinas) {
-        this.professors = disciplinas;
-    }
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public Professor usuario(Usuario usuario) {
-        this.usuario = usuario;
-        return this;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 

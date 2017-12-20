@@ -14,7 +14,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171220204941",
+    "changelogDate": "20171220225217",
     "entityTableName": "permissao",
     "dto": "no",
     "pagination": "no",

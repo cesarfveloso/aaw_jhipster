@@ -16,14 +16,14 @@
 
 spring:
     application:
-        name: aaw_aula3
+        name: aula3
     jackson:
         serialization.write_dates_as_timestamps: false
     cache:
         type: none
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:mem:aaw_aula3;DB_CLOSE_DELAY=-1
+        url: jdbc:h2:mem:aula3;DB_CLOSE_DELAY=-1
         name:
         username:
         password:
@@ -88,7 +88,7 @@ jhipster:
     security:
         authentication:
             jwt:
-                secret: a06107710f0ad7c742c4cdb9386973ad40972082
+                secret: 3a89e29d1de84890fa5a9e408161dc3096fb3d82
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration

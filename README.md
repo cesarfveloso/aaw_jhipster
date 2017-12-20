@@ -1,4 +1,4 @@
-# aaw_aula3
+# aula3
 This application was generated using JHipster 4.12.0, you can find documentation and help at [http://www.jhipster.tech/documentation-archive/v4.12.0](http://www.jhipster.tech/documentation-archive/v4.12.0).
 
 ## Development
@@ -87,7 +87,7 @@ will generate few files:
 
 ## Building for production
 
-To optimize the aaw_aula3 application for production, run:
+To optimize the aula3 application for production, run:
 
     ./mvnw -Pprod clean package
 
@@ -163,3 +163,4 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 [Protractor]: https://angular.github.io/protractor/
 [Leaflet]: http://leafletjs.com/
 [DefinitelyTyped]: http://definitelytyped.org/
+"# aaw_jhipster" 

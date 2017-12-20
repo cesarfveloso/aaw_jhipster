@@ -1,7 +1,7 @@
 <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
 
     <div class="modal-header">
-        <h4 class="modal-title" id="myAtividadeLabel" jhiTranslate="aawAula3App.atividade.home.createOrEditLabel">Create or edit a Atividade</h4>
+        <h4 class="modal-title" id="myAtividadeLabel" jhiTranslate="aula3App.atividade.home.createOrEditLabel">Create or edit a Atividade</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 (click)="clear()">&times;</button>
     </div>
@@ -13,23 +13,23 @@
                    [(ngModel)]="atividade.id" readonly />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.atividade.valor" for="field_valor">Valor</label>
+            <label class="form-control-label" jhiTranslate="aula3App.atividade.valor" for="field_valor">Valor</label>
             <input type="number" class="form-control" name="valor" id="field_valor"
                 [(ngModel)]="atividade.valor" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.atividade.tipo" for="field_tipo">Tipo</label>
+            <label class="form-control-label" jhiTranslate="aula3App.atividade.tipo" for="field_tipo">Tipo</label>
             <input type="text" class="form-control" name="tipo" id="field_tipo"
                 [(ngModel)]="atividade.tipo" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.atividade.dataFinal" for="field_dataFinal">Data Final</label>
+            <label class="form-control-label" jhiTranslate="aula3App.atividade.dataFinal" for="field_dataFinal">Data Final</label>
             <input type="text" class="form-control" name="dataFinal" id="field_dataFinal"
                 [(ngModel)]="atividade.dataFinal" />
         </div>
 
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.atividade.disciplina" for="field_disciplina">Disciplina</label>
+            <label class="form-control-label" jhiTranslate="aula3App.atividade.disciplina" for="field_disciplina">Disciplina</label>
             <select class="form-control" id="field_disciplina" name="disciplina" [(ngModel)]="atividade.disciplina" >
                 <option [ngValue]="null"></option>
                 <option [ngValue]="disciplinaOption.id === atividade.disciplina?.id ? atividade.disciplina : disciplinaOption" *ngFor="let disciplinaOption of disciplinas; trackBy: trackDisciplinaById">{{disciplinaOption.id}}</option>

@@ -1,24 +1,24 @@
 
 <div *ngIf="entrega">
-    <h2><span jhiTranslate="aawAula3App.entrega.detail.title">Entrega</span> {{entrega.id}}</h2>
+    <h2><span jhiTranslate="aula3App.entrega.detail.title">Entrega</span> {{entrega.id}}</h2>
     <hr>
     <jhi-alert-error></jhi-alert-error>
     <dl class="row-md jh-entity-details">
-        <dt><span jhiTranslate="aawAula3App.entrega.dataEntrega">Data Entrega</span></dt>
+        <dt><span jhiTranslate="aula3App.entrega.dataEntrega">Data Entrega</span></dt>
         <dd>
             <span>{{entrega.dataEntrega}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.entrega.entregaNoPrazo">Entrega No Prazo</span></dt>
+        <dt><span jhiTranslate="aula3App.entrega.entregaNoPrazo">Entrega No Prazo</span></dt>
         <dd>
             <span>{{entrega.entregaNoPrazo}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.entrega.aluno">Aluno</span></dt>
+        <dt><span jhiTranslate="aula3App.entrega.aluno">Aluno</span></dt>
         <dd>
             <div *ngIf="entrega.aluno">
                 <a [routerLink]="['/aluno', entrega.aluno?.id]">{{entrega.aluno?.id}}</a>
             </div>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.entrega.atividade">Atividade</span></dt>
+        <dt><span jhiTranslate="aula3App.entrega.atividade">Atividade</span></dt>
         <dd>
             <div *ngIf="entrega.atividade">
                 <a [routerLink]="['/atividade', entrega.atividade?.id]">{{entrega.atividade?.id}}</a>

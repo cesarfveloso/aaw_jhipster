@@ -1,7 +1,7 @@
 <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
 
     <div class="modal-header">
-        <h4 class="modal-title" id="myDisciplinaLabel" jhiTranslate="aawAula3App.disciplina.home.createOrEditLabel">Create or edit a Disciplina</h4>
+        <h4 class="modal-title" id="myDisciplinaLabel" jhiTranslate="aula3App.disciplina.home.createOrEditLabel">Create or edit a Disciplina</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 (click)="clear()">&times;</button>
     </div>
@@ -13,38 +13,31 @@
                    [(ngModel)]="disciplina.id" readonly />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.disciplina.nome" for="field_nome">Nome</label>
+            <label class="form-control-label" jhiTranslate="aula3App.disciplina.nome" for="field_nome">Nome</label>
             <input type="text" class="form-control" name="nome" id="field_nome"
                 [(ngModel)]="disciplina.nome" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.disciplina.cargaHoraria" for="field_cargaHoraria">Carga Horaria</label>
+            <label class="form-control-label" jhiTranslate="aula3App.disciplina.cargaHoraria" for="field_cargaHoraria">Carga Horaria</label>
             <input type="number" class="form-control" name="cargaHoraria" id="field_cargaHoraria"
                 [(ngModel)]="disciplina.cargaHoraria" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.disciplina.sigla" for="field_sigla">Sigla</label>
+            <label class="form-control-label" jhiTranslate="aula3App.disciplina.sigla" for="field_sigla">Sigla</label>
             <input type="text" class="form-control" name="sigla" id="field_sigla"
                 [(ngModel)]="disciplina.sigla" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.disciplina.ementa" for="field_ementa">Ementa</label>
+            <label class="form-control-label" jhiTranslate="aula3App.disciplina.ementa" for="field_ementa">Ementa</label>
             <input type="text" class="form-control" name="ementa" id="field_ementa"
                 [(ngModel)]="disciplina.ementa" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.disciplina.creditos" for="field_creditos">Creditos</label>
+            <label class="form-control-label" jhiTranslate="aula3App.disciplina.creditos" for="field_creditos">Creditos</label>
             <input type="number" class="form-control" name="creditos" id="field_creditos"
                 [(ngModel)]="disciplina.creditos" />
         </div>
 
-        <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.disciplina.professor" for="field_professor">Professor</label>
-            <select class="form-control" id="field_professor" name="professor" [(ngModel)]="disciplina.professor" >
-                <option [ngValue]="null"></option>
-                <option [ngValue]="professorOption.id === disciplina.professor?.id ? disciplina.professor : professorOption" *ngFor="let professorOption of professors; trackBy: trackProfessorById">{{professorOption.id}}</option>
-            </select>
-        </div>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">

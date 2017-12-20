@@ -1,18 +1,18 @@
 
 <div *ngIf="aula">
-    <h2><span jhiTranslate="aawAula3App.aula.detail.title">Aula</span> {{aula.id}}</h2>
+    <h2><span jhiTranslate="aula3App.aula.detail.title">Aula</span> {{aula.id}}</h2>
     <hr>
     <jhi-alert-error></jhi-alert-error>
     <dl class="row-md jh-entity-details">
-        <dt><span jhiTranslate="aawAula3App.aula.horarioInicial">Horario Inicial</span></dt>
+        <dt><span jhiTranslate="aula3App.aula.horarioInicial">Horario Inicial</span></dt>
         <dd>
             <span>{{aula.horarioInicial}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.aula.horarioFinal">Horario Final</span></dt>
+        <dt><span jhiTranslate="aula3App.aula.horarioFinal">Horario Final</span></dt>
         <dd>
             <span>{{aula.horarioFinal}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.aula.turma">Turma</span></dt>
+        <dt><span jhiTranslate="aula3App.aula.turma">Turma</span></dt>
         <dd>
             <div *ngIf="aula.turma">
                 <a [routerLink]="['/turma', aula.turma?.id]">{{aula.turma?.id}}</a>

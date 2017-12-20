@@ -1,7 +1,7 @@
 package com.aaw.aula3.web.rest;
 
 import io.github.jhipster.config.JHipsterProperties;
-import com.aaw.aula3.AawAula3App;
+import com.aaw.aula3.Aula3App;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see ProfileInfoResource
  **/
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = AawAula3App.class)
+@SpringBootTest(classes = Aula3App.class)
 public class ProfileInfoResourceIntTest {
 
     @Mock

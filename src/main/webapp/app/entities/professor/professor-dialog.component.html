@@ -1,7 +1,7 @@
 <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
 
     <div class="modal-header">
-        <h4 class="modal-title" id="myProfessorLabel" jhiTranslate="aawAula3App.professor.home.createOrEditLabel">Create or edit a Professor</h4>
+        <h4 class="modal-title" id="myProfessorLabel" jhiTranslate="aula3App.professor.home.createOrEditLabel">Create or edit a Professor</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 (click)="clear()">&times;</button>
     </div>
@@ -13,27 +13,21 @@
                    [(ngModel)]="professor.id" readonly />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.professor.nome" for="field_nome">Nome</label>
+            <label class="form-control-label" jhiTranslate="aula3App.professor.nome" for="field_nome">Nome</label>
             <input type="text" class="form-control" name="nome" id="field_nome"
                 [(ngModel)]="professor.nome" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.professor.tituloFormacao" for="field_tituloFormacao">Titulo Formacao</label>
+            <label class="form-control-label" jhiTranslate="aula3App.professor.tituloFormacao" for="field_tituloFormacao">Titulo Formacao</label>
             <input type="text" class="form-control" name="tituloFormacao" id="field_tituloFormacao"
                 [(ngModel)]="professor.tituloFormacao" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.professor.areaConhecimento" for="field_areaConhecimento">Area Conhecimento</label>
+            <label class="form-control-label" jhiTranslate="aula3App.professor.areaConhecimento" for="field_areaConhecimento">Area Conhecimento</label>
             <input type="text" class="form-control" name="areaConhecimento" id="field_areaConhecimento"
                 [(ngModel)]="professor.areaConhecimento" />
         </div>
 
-        <div class="form-group">
-            <label jhiTranslate="aawAula3App.professor.professor" for="field_professor">Professor</label>
-            <select class="form-control" id="field_professor" multiple name="professor" [(ngModel)]="professor.professors">
-                <option [ngValue]="getSelected(professor.professors, disciplinaOption)" *ngFor="let disciplinaOption of disciplinas; trackBy: trackDisciplinaById">{{disciplinaOption.id}}</option>
-            </select>
-        </div>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">

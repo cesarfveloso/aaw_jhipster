@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { Observable } from 'rxjs/Rx';
 import { Headers } from '@angular/http';
 
-import { AawAula3TestModule } from '../../../test.module';
+import { Aula3TestModule } from '../../../test.module';
 import { UsuarioComponent } from '../../../../../../main/webapp/app/entities/usuario/usuario.component';
 import { UsuarioService } from '../../../../../../main/webapp/app/entities/usuario/usuario.service';
 import { Usuario } from '../../../../../../main/webapp/app/entities/usuario/usuario.model';
@@ -17,7 +17,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [AawAula3TestModule],
+                imports: [Aula3TestModule],
                 declarations: [UsuarioComponent],
                 providers: [
                     UsuarioService

@@ -1,30 +1,18 @@
 
 <div *ngIf="usuario">
-    <h2><span jhiTranslate="aawAula3App.usuario.detail.title">Usuario</span> {{usuario.id}}</h2>
+    <h2><span jhiTranslate="aula3App.usuario.detail.title">Usuario</span> {{usuario.id}}</h2>
     <hr>
     <jhi-alert-error></jhi-alert-error>
     <dl class="row-md jh-entity-details">
-        <dt><span jhiTranslate="aawAula3App.usuario.cpf">Cpf</span></dt>
+        <dt><span jhiTranslate="aula3App.usuario.cpf">Cpf</span></dt>
         <dd>
             <span>{{usuario.cpf}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.usuario.ativo">Ativo</span></dt>
+        <dt><span jhiTranslate="aula3App.usuario.ativo">Ativo</span></dt>
         <dd>
             <span>{{usuario.ativo}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.usuario.aluno">Aluno</span></dt>
-        <dd>
-            <div *ngIf="usuario.aluno">
-                <a [routerLink]="['/aluno', usuario.aluno?.id]">{{usuario.aluno?.id}}</a>
-            </div>
-        </dd>
-        <dt><span jhiTranslate="aawAula3App.usuario.professor">Professor</span></dt>
-        <dd>
-            <div *ngIf="usuario.professor">
-                <a [routerLink]="['/professor', usuario.professor?.id]">{{usuario.professor?.id}}</a>
-            </div>
-        </dd>
-        <dt><span jhiTranslate="aawAula3App.usuario.permissao">Permissao</span></dt>
+        <dt><span jhiTranslate="aula3App.usuario.permissao">Permissao</span></dt>
         <dd>
             <div *ngIf="usuario.permissao">
                 <a [routerLink]="['/permissao', usuario.permissao?.id]">{{usuario.permissao?.id}}</a>

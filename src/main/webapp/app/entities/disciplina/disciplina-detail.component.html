@@ -1,34 +1,28 @@
 
 <div *ngIf="disciplina">
-    <h2><span jhiTranslate="aawAula3App.disciplina.detail.title">Disciplina</span> {{disciplina.id}}</h2>
+    <h2><span jhiTranslate="aula3App.disciplina.detail.title">Disciplina</span> {{disciplina.id}}</h2>
     <hr>
     <jhi-alert-error></jhi-alert-error>
     <dl class="row-md jh-entity-details">
-        <dt><span jhiTranslate="aawAula3App.disciplina.nome">Nome</span></dt>
+        <dt><span jhiTranslate="aula3App.disciplina.nome">Nome</span></dt>
         <dd>
             <span>{{disciplina.nome}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.disciplina.cargaHoraria">Carga Horaria</span></dt>
+        <dt><span jhiTranslate="aula3App.disciplina.cargaHoraria">Carga Horaria</span></dt>
         <dd>
             <span>{{disciplina.cargaHoraria}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.disciplina.sigla">Sigla</span></dt>
+        <dt><span jhiTranslate="aula3App.disciplina.sigla">Sigla</span></dt>
         <dd>
             <span>{{disciplina.sigla}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.disciplina.ementa">Ementa</span></dt>
+        <dt><span jhiTranslate="aula3App.disciplina.ementa">Ementa</span></dt>
         <dd>
             <span>{{disciplina.ementa}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.disciplina.creditos">Creditos</span></dt>
+        <dt><span jhiTranslate="aula3App.disciplina.creditos">Creditos</span></dt>
         <dd>
             <span>{{disciplina.creditos}}</span>
-        </dd>
-        <dt><span jhiTranslate="aawAula3App.disciplina.professor">Professor</span></dt>
-        <dd>
-            <div *ngIf="disciplina.professor">
-                <a [routerLink]="['/professor', disciplina.professor?.id]">{{disciplina.professor?.id}}</a>
-            </div>
         </dd>
     </dl>
 

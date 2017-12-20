@@ -4,11 +4,10 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs/Rx';
 import { JhiEventManager } from 'ng-jhipster';
 
-import { AawAula3TestModule } from '../../../test.module';
+import { Aula3TestModule } from '../../../test.module';
 import { DisciplinaDialogComponent } from '../../../../../../main/webapp/app/entities/disciplina/disciplina-dialog.component';
 import { DisciplinaService } from '../../../../../../main/webapp/app/entities/disciplina/disciplina.service';
 import { Disciplina } from '../../../../../../main/webapp/app/entities/disciplina/disciplina.model';
-import { ProfessorService } from '../../../../../../main/webapp/app/entities/professor';
 
 describe('Component Tests', () => {
 
@@ -21,10 +20,9 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [AawAula3TestModule],
+                imports: [Aula3TestModule],
                 declarations: [DisciplinaDialogComponent],
                 providers: [
-                    ProfessorService,
                     DisciplinaService
                 ]
             })

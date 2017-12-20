@@ -9,8 +9,6 @@ export class Disciplina implements BaseEntity {
         public ementa?: string,
         public creditos?: number,
         public atividades?: BaseEntity[],
-        public professor?: BaseEntity,
-        public disciplinas?: BaseEntity[],
     ) {
     }
 }

@@ -9,7 +9,6 @@ import { JhiEventManager, JhiAlertService } from 'ng-jhipster';
 import { Aluno } from './aluno.model';
 import { AlunoPopupService } from './aluno-popup.service';
 import { AlunoService } from './aluno.service';
-import { Usuario, UsuarioService } from '../usuario';
 import { Turma, TurmaService } from '../turma';
 import { ResponseWrapper } from '../../shared';
 
@@ -22,15 +21,12 @@ export class AlunoDialogComponent implements OnInit {
     aluno: Aluno;
     isSaving: boolean;
 
-    usuarios: Usuario[];
-
     turmas: Turma[];
 
     constructor(
         public activeModal: NgbActiveModal,
         private jhiAlertService: JhiAlertService,
         private alunoService: AlunoService,
-        private usuarioService: UsuarioService,
         private turmaService: TurmaService,
         private eventManager: JhiEventManager
     ) {
@@ -38,8 +34,6 @@ export class AlunoDialogComponent implements OnInit {
 
     ngOnInit() {
         this.isSaving = false;
-        this.usuarioService.query()
-            .subscribe((res: ResponseWrapper) => { this.usuarios = res.json; }, (res: ResponseWrapper) => this.onError(res.json));
         this.turmaService.query()
             .subscribe((res: ResponseWrapper) => { this.turmas = res.json; }, (res: ResponseWrapper) => this.onError(res.json));
     }
@@ -76,10 +70,6 @@ export class AlunoDialogComponent implements OnInit {
 
     private onError(error: any) {
         this.jhiAlertService.error(error.message, null, null);
-    }
-
-    trackUsuarioById(index: number, item: Usuario) {
-        return item.id;
     }
 
     trackTurmaById(index: number, item: Turma) {

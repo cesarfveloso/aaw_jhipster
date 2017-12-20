@@ -12,7 +12,7 @@ export const entregaRoute: Routes = [
         component: EntregaComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.entrega.home.title'
+            pageTitle: 'aula3App.entrega.home.title'
         },
         canActivate: [UserRouteAccessService]
     }, {
@@ -20,7 +20,7 @@ export const entregaRoute: Routes = [
         component: EntregaDetailComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.entrega.home.title'
+            pageTitle: 'aula3App.entrega.home.title'
         },
         canActivate: [UserRouteAccessService]
     }
@@ -32,7 +32,7 @@ export const entregaPopupRoute: Routes = [
         component: EntregaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.entrega.home.title'
+            pageTitle: 'aula3App.entrega.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -42,7 +42,7 @@ export const entregaPopupRoute: Routes = [
         component: EntregaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.entrega.home.title'
+            pageTitle: 'aula3App.entrega.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -52,7 +52,7 @@ export const entregaPopupRoute: Routes = [
         component: EntregaDeletePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.entrega.home.title'
+            pageTitle: 'aula3App.entrega.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'

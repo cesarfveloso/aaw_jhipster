@@ -6,9 +6,6 @@ export class Professor implements BaseEntity {
         public nome?: string,
         public tituloFormacao?: string,
         public areaConhecimento?: string,
-        public disciplinas?: BaseEntity[],
-        public professors?: BaseEntity[],
-        public usuario?: BaseEntity,
     ) {
     }
 }

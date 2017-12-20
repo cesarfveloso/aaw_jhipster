@@ -11,7 +11,6 @@ export class Aluno implements BaseEntity {
         public faltas?: BaseEntity[],
         public notas?: BaseEntity[],
         public entregas?: BaseEntity[],
-        public usuario?: BaseEntity,
         public turma?: BaseEntity,
     ) {
         this.bolsista = false;

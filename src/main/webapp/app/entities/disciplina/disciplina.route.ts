@@ -12,7 +12,7 @@ export const disciplinaRoute: Routes = [
         component: DisciplinaComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.disciplina.home.title'
+            pageTitle: 'aula3App.disciplina.home.title'
         },
         canActivate: [UserRouteAccessService]
     }, {
@@ -20,7 +20,7 @@ export const disciplinaRoute: Routes = [
         component: DisciplinaDetailComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.disciplina.home.title'
+            pageTitle: 'aula3App.disciplina.home.title'
         },
         canActivate: [UserRouteAccessService]
     }
@@ -32,7 +32,7 @@ export const disciplinaPopupRoute: Routes = [
         component: DisciplinaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.disciplina.home.title'
+            pageTitle: 'aula3App.disciplina.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -42,7 +42,7 @@ export const disciplinaPopupRoute: Routes = [
         component: DisciplinaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.disciplina.home.title'
+            pageTitle: 'aula3App.disciplina.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -52,7 +52,7 @@ export const disciplinaPopupRoute: Routes = [
         component: DisciplinaDeletePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.disciplina.home.title'
+            pageTitle: 'aula3App.disciplina.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'

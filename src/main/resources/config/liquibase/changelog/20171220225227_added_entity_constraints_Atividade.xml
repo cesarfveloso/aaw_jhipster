@@ -4,15 +4,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
     <!--
-        Added the constraints for entity Aula.
+        Added the constraints for entity Atividade.
     -->
-    <changeSet id="20171220204946-2" author="jhipster">
+    <changeSet id="20171220225227-2" author="jhipster">
         
-        <addForeignKeyConstraint baseColumnNames="turma_id"
-                                 baseTableName="aula"
-                                 constraintName="fk_aula_turma_id"
+        <addForeignKeyConstraint baseColumnNames="disciplina_id"
+                                 baseTableName="atividade"
+                                 constraintName="fk_atividade_disciplina_id"
                                  referencedColumnNames="id"
-                                 referencedTableName="turma"/>
+                                 referencedTableName="disciplina"/>
 
     </changeSet>
 </databaseChangeLog>

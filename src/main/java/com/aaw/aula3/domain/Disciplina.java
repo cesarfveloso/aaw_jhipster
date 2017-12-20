@@ -41,13 +41,6 @@ public class Disciplina implements Serializable {
     @JsonIgnore
     private Set<Atividade> atividades = new HashSet<>();
 
-    @ManyToOne
-    private Professor professor;
-
-    @ManyToMany(mappedBy = "professors")
-    @JsonIgnore
-    private Set<Professor> disciplinas = new HashSet<>();
-
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
         return id;
@@ -145,44 +138,6 @@ public class Disciplina implements Serializable {
 
     public void setAtividades(Set<Atividade> atividades) {
         this.atividades = atividades;
-    }
-
-    public Professor getProfessor() {
-        return professor;
-    }
-
-    public Disciplina professor(Professor professor) {
-        this.professor = professor;
-        return this;
-    }
-
-    public void setProfessor(Professor professor) {
-        this.professor = professor;
-    }
-
-    public Set<Professor> getDisciplinas() {
-        return disciplinas;
-    }
-
-    public Disciplina disciplinas(Set<Professor> professors) {
-        this.disciplinas = professors;
-        return this;
-    }
-
-    public Disciplina addDisciplina(Professor professor) {
-        this.disciplinas.add(professor);
-        professor.getProfessors().add(this);
-        return this;
-    }
-
-    public Disciplina removeDisciplina(Professor professor) {
-        this.disciplinas.remove(professor);
-        professor.getProfessors().remove(this);
-        return this;
-    }
-
-    public void setDisciplinas(Set<Professor> professors) {
-        this.disciplinas = professors;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 

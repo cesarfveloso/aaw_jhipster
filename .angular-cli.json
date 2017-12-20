@@ -1,7 +1,7 @@
 {
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
     "project": {
-        "name": "aaw-aula-3"
+        "name": "aula-3"
     },
     "apps": [{
         "root": "src/main/webapp",

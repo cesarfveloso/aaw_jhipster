@@ -1,7 +1,7 @@
 <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
 
     <div class="modal-header">
-        <h4 class="modal-title" id="myPermissaoLabel" jhiTranslate="aawAula3App.permissao.home.createOrEditLabel">Create or edit a Permissao</h4>
+        <h4 class="modal-title" id="myPermissaoLabel" jhiTranslate="aula3App.permissao.home.createOrEditLabel">Create or edit a Permissao</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 (click)="clear()">&times;</button>
     </div>
@@ -13,7 +13,7 @@
                    [(ngModel)]="permissao.id" readonly />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.permissao.tipo" for="field_tipo">Tipo</label>
+            <label class="form-control-label" jhiTranslate="aula3App.permissao.tipo" for="field_tipo">Tipo</label>
             <input type="text" class="form-control" name="tipo" id="field_tipo"
                 [(ngModel)]="permissao.tipo" />
         </div>

@@ -5,8 +5,6 @@ export class Usuario implements BaseEntity {
         public id?: number,
         public cpf?: number,
         public ativo?: boolean,
-        public aluno?: BaseEntity,
-        public professor?: BaseEntity,
         public permissao?: BaseEntity,
     ) {
         this.ativo = false;

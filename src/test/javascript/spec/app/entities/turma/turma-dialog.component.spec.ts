@@ -4,7 +4,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs/Rx';
 import { JhiEventManager } from 'ng-jhipster';
 
-import { AawAula3TestModule } from '../../../test.module';
+import { Aula3TestModule } from '../../../test.module';
 import { TurmaDialogComponent } from '../../../../../../main/webapp/app/entities/turma/turma-dialog.component';
 import { TurmaService } from '../../../../../../main/webapp/app/entities/turma/turma.service';
 import { Turma } from '../../../../../../main/webapp/app/entities/turma/turma.model';
@@ -20,7 +20,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [AawAula3TestModule],
+                imports: [Aula3TestModule],
                 declarations: [TurmaDialogComponent],
                 providers: [
                     TurmaService

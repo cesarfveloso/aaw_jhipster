@@ -1,26 +1,20 @@
 
 <div *ngIf="professor">
-    <h2><span jhiTranslate="aawAula3App.professor.detail.title">Professor</span> {{professor.id}}</h2>
+    <h2><span jhiTranslate="aula3App.professor.detail.title">Professor</span> {{professor.id}}</h2>
     <hr>
     <jhi-alert-error></jhi-alert-error>
     <dl class="row-md jh-entity-details">
-        <dt><span jhiTranslate="aawAula3App.professor.nome">Nome</span></dt>
+        <dt><span jhiTranslate="aula3App.professor.nome">Nome</span></dt>
         <dd>
             <span>{{professor.nome}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.professor.tituloFormacao">Titulo Formacao</span></dt>
+        <dt><span jhiTranslate="aula3App.professor.tituloFormacao">Titulo Formacao</span></dt>
         <dd>
             <span>{{professor.tituloFormacao}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.professor.areaConhecimento">Area Conhecimento</span></dt>
+        <dt><span jhiTranslate="aula3App.professor.areaConhecimento">Area Conhecimento</span></dt>
         <dd>
             <span>{{professor.areaConhecimento}}</span>
-        </dd>
-        <dt><span jhiTranslate="aawAula3App.professor.professor">Professor</span></dt>
-        <dd>
-            <span *ngFor="let professor of professor.professors; let last = last">
-                <a [routerLink]="['/disciplina', professor?.id ]">{{professor.id}}</a>{{last ? '' : ', '}}
-            </span>
         </dd>
     </dl>
 

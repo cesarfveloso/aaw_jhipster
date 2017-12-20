@@ -6,19 +6,6 @@
             "relationshipName": "atividade",
             "otherEntityName": "atividade",
             "otherEntityRelationshipName": "disciplina"
-        },
-        {
-            "relationshipType": "many-to-one",
-            "relationshipName": "professor",
-            "otherEntityName": "professor",
-            "otherEntityField": "id"
-        },
-        {
-            "relationshipType": "many-to-many",
-            "relationshipName": "disciplina",
-            "otherEntityName": "professor",
-            "ownerSide": false,
-            "otherEntityRelationshipName": "professor"
         }
     ],
     "fields": [
@@ -43,7 +30,7 @@
             "fieldType": "Integer"
         }
     ],
-    "changelogDate": "20171220204950",
+    "changelogDate": "20171220225226",
     "entityTableName": "disciplina",
     "dto": "no",
     "pagination": "no",

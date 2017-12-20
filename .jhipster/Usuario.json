@@ -2,22 +2,6 @@
     "fluentMethods": true,
     "relationships": [
         {
-            "relationshipType": "one-to-one",
-            "relationshipName": "aluno",
-            "otherEntityName": "aluno",
-            "otherEntityField": "id",
-            "ownerSide": true,
-            "otherEntityRelationshipName": "usuario"
-        },
-        {
-            "relationshipType": "one-to-one",
-            "relationshipName": "professor",
-            "otherEntityName": "professor",
-            "otherEntityField": "id",
-            "ownerSide": true,
-            "otherEntityRelationshipName": "usuario"
-        },
-        {
             "relationshipType": "many-to-one",
             "relationshipName": "permissao",
             "otherEntityName": "permissao",
@@ -34,7 +18,7 @@
             "fieldType": "Boolean"
         }
     ],
-    "changelogDate": "20171220204942",
+    "changelogDate": "20171220225218",
     "entityTableName": "usuario",
     "dto": "no",
     "pagination": "no",

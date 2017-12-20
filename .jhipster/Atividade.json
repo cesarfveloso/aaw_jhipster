@@ -34,7 +34,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171220204951",
+    "changelogDate": "20171220225227",
     "entityTableName": "atividade",
     "dto": "no",
     "pagination": "no",

@@ -1,6 +1,6 @@
 package com.aaw.aula3.repository;
 
-import com.aaw.aula3.AawAula3App;
+import com.aaw.aula3.Aula3App;
 import com.aaw.aula3.config.Constants;
 import com.aaw.aula3.config.audit.AuditEventConverter;
 import com.aaw.aula3.domain.PersistentAuditEvent;
@@ -32,7 +32,7 @@ import static com.aaw.aula3.repository.CustomAuditEventRepository.EVENT_DATA_COL
  * @see CustomAuditEventRepository
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = AawAula3App.class)
+@SpringBootTest(classes = Aula3App.class)
 @Transactional
 public class CustomAuditEventRepositoryIntTest {
 

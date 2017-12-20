@@ -1,6 +1,6 @@
 package com.aaw.aula3.web.rest;
 
-import com.aaw.aula3.AawAula3App;
+import com.aaw.aula3.Aula3App;
 
 import com.aaw.aula3.domain.Permissao;
 import com.aaw.aula3.repository.PermissaoRepository;
@@ -35,7 +35,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see PermissaoResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = AawAula3App.class)
+@SpringBootTest(classes = Aula3App.class)
 public class PermissaoResourceIntTest {
 
     private static final String DEFAULT_TIPO = "AAAAAAAAAA";

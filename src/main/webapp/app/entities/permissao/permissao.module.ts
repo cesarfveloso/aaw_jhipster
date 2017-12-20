@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { AawAula3SharedModule } from '../../shared';
+import { Aula3SharedModule } from '../../shared';
 import {
     PermissaoService,
     PermissaoPopupService,
@@ -22,7 +22,7 @@ const ENTITY_STATES = [
 
 @NgModule({
     imports: [
-        AawAula3SharedModule,
+        Aula3SharedModule,
         RouterModule.forChild(ENTITY_STATES)
     ],
     declarations: [
@@ -46,4 +46,4 @@ const ENTITY_STATES = [
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AawAula3PermissaoModule {}
+export class Aula3PermissaoModule {}

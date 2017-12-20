@@ -24,18 +24,18 @@ import java.util.Collection;
 @ComponentScan
 @EnableAutoConfiguration(exclude = {MetricFilterAutoConfiguration.class, MetricRepositoryAutoConfiguration.class})
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
-public class AawAula3App {
+public class Aula3App {
 
-    private static final Logger log = LoggerFactory.getLogger(AawAula3App.class);
+    private static final Logger log = LoggerFactory.getLogger(Aula3App.class);
 
     private final Environment env;
 
-    public AawAula3App(Environment env) {
+    public Aula3App(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes aaw_aula3.
+     * Initializes aula3.
      * <p>
      * Spring profiles can be configured with a program arguments --spring.profiles.active=your-active-profile
      * <p>
@@ -61,7 +61,7 @@ public class AawAula3App {
      * @throws UnknownHostException if the local host name could not be resolved into an address
      */
     public static void main(String[] args) throws UnknownHostException {
-        SpringApplication app = new SpringApplication(AawAula3App.class);
+        SpringApplication app = new SpringApplication(Aula3App.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         String protocol = "http";

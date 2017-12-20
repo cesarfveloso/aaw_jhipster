@@ -12,7 +12,7 @@ export const faltaRoute: Routes = [
         component: FaltaComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.falta.home.title'
+            pageTitle: 'aula3App.falta.home.title'
         },
         canActivate: [UserRouteAccessService]
     }, {
@@ -20,7 +20,7 @@ export const faltaRoute: Routes = [
         component: FaltaDetailComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.falta.home.title'
+            pageTitle: 'aula3App.falta.home.title'
         },
         canActivate: [UserRouteAccessService]
     }
@@ -32,7 +32,7 @@ export const faltaPopupRoute: Routes = [
         component: FaltaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.falta.home.title'
+            pageTitle: 'aula3App.falta.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -42,7 +42,7 @@ export const faltaPopupRoute: Routes = [
         component: FaltaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.falta.home.title'
+            pageTitle: 'aula3App.falta.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -52,7 +52,7 @@ export const faltaPopupRoute: Routes = [
         component: FaltaDeletePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.falta.home.title'
+            pageTitle: 'aula3App.falta.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'

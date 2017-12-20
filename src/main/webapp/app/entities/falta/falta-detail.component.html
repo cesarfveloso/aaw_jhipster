@@ -1,28 +1,28 @@
 
 <div *ngIf="falta">
-    <h2><span jhiTranslate="aawAula3App.falta.detail.title">Falta</span> {{falta.id}}</h2>
+    <h2><span jhiTranslate="aula3App.falta.detail.title">Falta</span> {{falta.id}}</h2>
     <hr>
     <jhi-alert-error></jhi-alert-error>
     <dl class="row-md jh-entity-details">
-        <dt><span jhiTranslate="aawAula3App.falta.data">Data</span></dt>
+        <dt><span jhiTranslate="aula3App.falta.data">Data</span></dt>
         <dd>
             <span>{{falta.data}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.falta.abono">Abono</span></dt>
+        <dt><span jhiTranslate="aula3App.falta.abono">Abono</span></dt>
         <dd>
             <span>{{falta.abono}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.falta.motivo">Motivo</span></dt>
+        <dt><span jhiTranslate="aula3App.falta.motivo">Motivo</span></dt>
         <dd>
             <span>{{falta.motivo}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.falta.aluno">Aluno</span></dt>
+        <dt><span jhiTranslate="aula3App.falta.aluno">Aluno</span></dt>
         <dd>
             <div *ngIf="falta.aluno">
                 <a [routerLink]="['/aluno', falta.aluno?.id]">{{falta.aluno?.id}}</a>
             </div>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.falta.aula">Aula</span></dt>
+        <dt><span jhiTranslate="aula3App.falta.aula">Aula</span></dt>
         <dd>
             <div *ngIf="falta.aula">
                 <a [routerLink]="['/aula', falta.aula?.id]">{{falta.aula?.id}}</a>

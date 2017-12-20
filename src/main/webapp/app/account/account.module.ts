@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { AawAula3SharedModule } from '../shared';
+import { Aula3SharedModule } from '../shared';
 
 import {
     Register,
@@ -21,7 +21,7 @@ import {
 
 @NgModule({
     imports: [
-        AawAula3SharedModule,
+        Aula3SharedModule,
         RouterModule.forChild(accountState)
     ],
     declarations: [
@@ -42,4 +42,4 @@ import {
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AawAula3AccountModule {}
+export class Aula3AccountModule {}

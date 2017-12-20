@@ -15,34 +15,26 @@
     <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
 
     <!--
-        Added the entity Disciplina.
+        Added the entity Entrega.
     -->
-    <changeSet id="20171220204950-1" author="jhipster">
-        <createTable tableName="disciplina">
+    <changeSet id="20171220225225-1" author="jhipster">
+        <createTable tableName="entrega">
             <column name="id" type="bigint" autoIncrement="${autoIncrement}">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="nome" type="varchar(255)">
+            <column name="data_entrega" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
 
-            <column name="carga_horaria" type="${floatType}">
+            <column name="entrega_no_prazo" type="bit">
                 <constraints nullable="true" />
             </column>
 
-            <column name="sigla" type="varchar(255)">
+            <column name="aluno_id" type="bigint">
                 <constraints nullable="true" />
             </column>
 
-            <column name="ementa" type="varchar(255)">
-                <constraints nullable="true" />
-            </column>
-
-            <column name="creditos" type="integer">
-                <constraints nullable="true" />
-            </column>
-
-            <column name="professor_id" type="bigint">
+            <column name="atividade_id" type="bigint">
                 <constraints nullable="true" />
             </column>
 

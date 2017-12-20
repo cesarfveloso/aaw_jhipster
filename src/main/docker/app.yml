@@ -1,14 +1,14 @@
 version: '2'
 services:
-    aaw_aula3-app:
-        image: aaw_aula3
+    aula3-app:
+        image: aula3
         environment:
             - SPRING_PROFILES_ACTIVE=prod,swagger
-            - SPRING_DATASOURCE_URL=jdbc:mysql://aaw_aula3-mysql:3306/aaw_aula3?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - SPRING_DATASOURCE_URL=jdbc:mysql://aula3-mysql:3306/aula3?useUnicode=true&characterEncoding=utf8&useSSL=false
             - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
         ports:
             - 8080:8080
-    aaw_aula3-mysql:
+    aula3-mysql:
         extends:
             file: mysql.yml
-            service: aaw_aula3-mysql
+            service: aula3-mysql

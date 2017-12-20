@@ -24,7 +24,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171220204945",
+    "changelogDate": "20171220225221",
     "entityTableName": "nota",
     "dto": "no",
     "pagination": "no",

@@ -1,9 +1,9 @@
 <div>
     <h2>
-        <span jhiTranslate="aawAula3App.professor.home.title">Professors</span>
+        <span jhiTranslate="aula3App.professor.home.title">Professors</span>
         <button class="btn btn-primary float-right jh-create-entity create-professor" [routerLink]="['/', { outlets: { popup: ['professor-new'] } }]">
             <span class="fa fa-plus"></span>
-            <span  jhiTranslate="aawAula3App.professor.home.createLabel">
+            <span  jhiTranslate="aula3App.professor.home.createLabel">
             Create new Professor
             </span>
         </button>
@@ -17,10 +17,9 @@
             <thead>
             <tr>
             <th><span jhiTranslate="global.field.id">ID</span></th>
-            <th><span jhiTranslate="aawAula3App.professor.nome">Nome</span></th>
-            <th><span jhiTranslate="aawAula3App.professor.tituloFormacao">Titulo Formacao</span></th>
-            <th><span jhiTranslate="aawAula3App.professor.areaConhecimento">Area Conhecimento</span></th>
-            <th><span jhiTranslate="aawAula3App.professor.professor">Professor</span></th>
+            <th><span jhiTranslate="aula3App.professor.nome">Nome</span></th>
+            <th><span jhiTranslate="aula3App.professor.tituloFormacao">Titulo Formacao</span></th>
+            <th><span jhiTranslate="aula3App.professor.areaConhecimento">Area Conhecimento</span></th>
             <th></th>
             </tr>
             </thead>
@@ -30,11 +29,6 @@
                 <td>{{professor.nome}}</td>
                 <td>{{professor.tituloFormacao}}</td>
                 <td>{{professor.areaConhecimento}}</td>
-                <td>
-                    <span *ngFor="let professor of professor.professors; let last = last">
-                            <a class="form-control-static" [routerLink]="['../disciplina', professor?.id ]">{{professor.id}}</a>{{last ? '' : ', '}}
-                        </span>
-                </td>
                 <td class="text-right">
                     <div class="btn-group flex-btn-group-container">
                         <button type="submit"

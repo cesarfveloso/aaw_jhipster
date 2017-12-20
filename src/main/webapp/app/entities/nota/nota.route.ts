@@ -12,7 +12,7 @@ export const notaRoute: Routes = [
         component: NotaComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.nota.home.title'
+            pageTitle: 'aula3App.nota.home.title'
         },
         canActivate: [UserRouteAccessService]
     }, {
@@ -20,7 +20,7 @@ export const notaRoute: Routes = [
         component: NotaDetailComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.nota.home.title'
+            pageTitle: 'aula3App.nota.home.title'
         },
         canActivate: [UserRouteAccessService]
     }
@@ -32,7 +32,7 @@ export const notaPopupRoute: Routes = [
         component: NotaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.nota.home.title'
+            pageTitle: 'aula3App.nota.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -42,7 +42,7 @@ export const notaPopupRoute: Routes = [
         component: NotaPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.nota.home.title'
+            pageTitle: 'aula3App.nota.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -52,7 +52,7 @@ export const notaPopupRoute: Routes = [
         component: NotaDeletePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.nota.home.title'
+            pageTitle: 'aula3App.nota.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'

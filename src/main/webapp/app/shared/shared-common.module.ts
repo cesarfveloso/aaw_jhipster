@@ -2,7 +2,7 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 import {
-    AawAula3SharedLibsModule,
+    Aula3SharedLibsModule,
     JhiLanguageHelper,
     FindLanguageFromKeyPipe,
     JhiAlertComponent,
@@ -11,7 +11,7 @@ import {
 
 @NgModule({
     imports: [
-        AawAula3SharedLibsModule
+        Aula3SharedLibsModule
     ],
     declarations: [
         FindLanguageFromKeyPipe,
@@ -27,10 +27,10 @@ import {
         },
     ],
     exports: [
-        AawAula3SharedLibsModule,
+        Aula3SharedLibsModule,
         FindLanguageFromKeyPipe,
         JhiAlertComponent,
         JhiAlertErrorComponent
     ]
 })
-export class AawAula3SharedCommonModule {}
+export class Aula3SharedCommonModule {}

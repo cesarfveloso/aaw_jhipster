@@ -1,6 +1,6 @@
 package com.aaw.aula3.service;
 
-import com.aaw.aula3.AawAula3App;
+import com.aaw.aula3.Aula3App;
 import com.aaw.aula3.config.Constants;
 import com.aaw.aula3.domain.User;
 import com.aaw.aula3.repository.UserRepository;
@@ -31,7 +31,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @see UserService
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = AawAula3App.class)
+@SpringBootTest(classes = Aula3App.class)
 @Transactional
 public class UserServiceIntTest {
 

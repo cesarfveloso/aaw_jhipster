@@ -12,7 +12,7 @@ export const permissaoRoute: Routes = [
         component: PermissaoComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.permissao.home.title'
+            pageTitle: 'aula3App.permissao.home.title'
         },
         canActivate: [UserRouteAccessService]
     }, {
@@ -20,7 +20,7 @@ export const permissaoRoute: Routes = [
         component: PermissaoDetailComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.permissao.home.title'
+            pageTitle: 'aula3App.permissao.home.title'
         },
         canActivate: [UserRouteAccessService]
     }
@@ -32,7 +32,7 @@ export const permissaoPopupRoute: Routes = [
         component: PermissaoPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.permissao.home.title'
+            pageTitle: 'aula3App.permissao.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -42,7 +42,7 @@ export const permissaoPopupRoute: Routes = [
         component: PermissaoPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.permissao.home.title'
+            pageTitle: 'aula3App.permissao.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -52,7 +52,7 @@ export const permissaoPopupRoute: Routes = [
         component: PermissaoDeletePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.permissao.home.title'
+            pageTitle: 'aula3App.permissao.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'

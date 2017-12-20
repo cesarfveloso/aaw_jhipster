@@ -1,5 +1,5 @@
 {
-    "aawAula3App": {
+    "aula3App": {
         "professor" : {
             "home": {
                 "title": "Professors",
@@ -17,10 +17,7 @@
             },
             "nome": "Nome",
             "tituloFormacao": "Titulo Formacao",
-            "areaConhecimento": "Area Conhecimento",
-            "disciplina": "Disciplina",
-            "professor": "Professor",
-            "usuario": "Usuario"
+            "areaConhecimento": "Area Conhecimento"
         }
     }
 }

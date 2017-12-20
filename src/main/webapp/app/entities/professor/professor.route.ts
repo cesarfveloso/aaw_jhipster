@@ -12,7 +12,7 @@ export const professorRoute: Routes = [
         component: ProfessorComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.professor.home.title'
+            pageTitle: 'aula3App.professor.home.title'
         },
         canActivate: [UserRouteAccessService]
     }, {
@@ -20,7 +20,7 @@ export const professorRoute: Routes = [
         component: ProfessorDetailComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.professor.home.title'
+            pageTitle: 'aula3App.professor.home.title'
         },
         canActivate: [UserRouteAccessService]
     }
@@ -32,7 +32,7 @@ export const professorPopupRoute: Routes = [
         component: ProfessorPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.professor.home.title'
+            pageTitle: 'aula3App.professor.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -42,7 +42,7 @@ export const professorPopupRoute: Routes = [
         component: ProfessorPopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.professor.home.title'
+            pageTitle: 'aula3App.professor.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'
@@ -52,7 +52,7 @@ export const professorPopupRoute: Routes = [
         component: ProfessorDeletePopupComponent,
         data: {
             authorities: ['ROLE_USER'],
-            pageTitle: 'aawAula3App.professor.home.title'
+            pageTitle: 'aula3App.professor.home.title'
         },
         canActivate: [UserRouteAccessService],
         outlet: 'popup'

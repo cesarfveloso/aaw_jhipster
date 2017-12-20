@@ -83,4 +83,4 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
         }
     ]
 })
-export class AawAula3TestModule {}
+export class Aula3TestModule {}

@@ -15,4 +15,4 @@ const LAYOUT_ROUTES = [
         RouterModule
     ]
 })
-export class AawAula3AppRoutingModule {}
+export class Aula3AppRoutingModule {}

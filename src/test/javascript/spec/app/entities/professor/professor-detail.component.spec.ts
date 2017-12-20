@@ -2,7 +2,7 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { Observable } from 'rxjs/Rx';
 
-import { AawAula3TestModule } from '../../../test.module';
+import { Aula3TestModule } from '../../../test.module';
 import { ProfessorDetailComponent } from '../../../../../../main/webapp/app/entities/professor/professor-detail.component';
 import { ProfessorService } from '../../../../../../main/webapp/app/entities/professor/professor.service';
 import { Professor } from '../../../../../../main/webapp/app/entities/professor/professor.model';
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [AawAula3TestModule],
+                imports: [Aula3TestModule],
                 declarations: [ProfessorDetailComponent],
                 providers: [
                     ProfessorService

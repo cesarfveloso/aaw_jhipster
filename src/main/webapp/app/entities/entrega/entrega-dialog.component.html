@@ -1,7 +1,7 @@
 <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
 
     <div class="modal-header">
-        <h4 class="modal-title" id="myEntregaLabel" jhiTranslate="aawAula3App.entrega.home.createOrEditLabel">Create or edit a Entrega</h4>
+        <h4 class="modal-title" id="myEntregaLabel" jhiTranslate="aula3App.entrega.home.createOrEditLabel">Create or edit a Entrega</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 (click)="clear()">&times;</button>
     </div>
@@ -13,25 +13,25 @@
                    [(ngModel)]="entrega.id" readonly />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.entrega.dataEntrega" for="field_dataEntrega">Data Entrega</label>
+            <label class="form-control-label" jhiTranslate="aula3App.entrega.dataEntrega" for="field_dataEntrega">Data Entrega</label>
             <input type="text" class="form-control" name="dataEntrega" id="field_dataEntrega"
                 [(ngModel)]="entrega.dataEntrega" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.entrega.entregaNoPrazo" for="field_entregaNoPrazo">Entrega No Prazo</label>
+            <label class="form-control-label" jhiTranslate="aula3App.entrega.entregaNoPrazo" for="field_entregaNoPrazo">Entrega No Prazo</label>
             <input type="checkbox" class="form-control" name="entregaNoPrazo" id="field_entregaNoPrazo"
                 [(ngModel)]="entrega.entregaNoPrazo" />
         </div>
 
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.entrega.aluno" for="field_aluno">Aluno</label>
+            <label class="form-control-label" jhiTranslate="aula3App.entrega.aluno" for="field_aluno">Aluno</label>
             <select class="form-control" id="field_aluno" name="aluno" [(ngModel)]="entrega.aluno" >
                 <option [ngValue]="null"></option>
                 <option [ngValue]="alunoOption.id === entrega.aluno?.id ? entrega.aluno : alunoOption" *ngFor="let alunoOption of alunos; trackBy: trackAlunoById">{{alunoOption.id}}</option>
             </select>
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.entrega.atividade" for="field_atividade">Atividade</label>
+            <label class="form-control-label" jhiTranslate="aula3App.entrega.atividade" for="field_atividade">Atividade</label>
             <select class="form-control" id="field_atividade" name="atividade" [(ngModel)]="entrega.atividade" >
                 <option [ngValue]="null"></option>
                 <option [ngValue]="atividadeOption.id === entrega.atividade?.id ? entrega.atividade : atividadeOption" *ngFor="let atividadeOption of atividades; trackBy: trackAtividadeById">{{atividadeOption.id}}</option>

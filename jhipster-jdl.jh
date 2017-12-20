@@ -63,28 +63,16 @@ entity Atividade {
     dataFinal String
 }
 
-relationship OneToOne {
-
-	Usuario{aluno} to Aluno{usuario},
-    Usuario{professor} to Professor{usuario}
-}
-
 relationship OneToMany {
 
 	Permissao to Usuario{permissao},
     Aluno to Falta{aluno},
     Aluno to Nota{aluno},
     Aluno to Entrega{aluno},
-    Professor to Disciplina{professor},
     Turma to Aluno{turma},
     Turma to Aula{turma},
     Atividade to Nota{atividade},
     Atividade to Entrega{atividade},
     Aula to Falta{aula},
     Disciplina to Atividade{disciplina}
-}
-
-relationship ManyToMany {
-	
-    Professor{professor} to Disciplina{disciplina}
 }

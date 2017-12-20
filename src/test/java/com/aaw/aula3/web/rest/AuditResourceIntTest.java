@@ -1,6 +1,6 @@
 package com.aaw.aula3.web.rest;
 
-import com.aaw.aula3.AawAula3App;
+import com.aaw.aula3.Aula3App;
 import com.aaw.aula3.config.audit.AuditEventConverter;
 import com.aaw.aula3.domain.PersistentAuditEvent;
 import com.aaw.aula3.repository.PersistenceAuditEventRepository;
@@ -33,7 +33,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see AuditResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = AawAula3App.class)
+@SpringBootTest(classes = Aula3App.class)
 @Transactional
 public class AuditResourceIntTest {
 

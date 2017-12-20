@@ -24,7 +24,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171220204946",
+    "changelogDate": "20171220225222",
     "entityTableName": "aula",
     "dto": "no",
     "pagination": "no",

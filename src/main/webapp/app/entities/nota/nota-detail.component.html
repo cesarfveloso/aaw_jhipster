@@ -1,24 +1,24 @@
 
 <div *ngIf="nota">
-    <h2><span jhiTranslate="aawAula3App.nota.detail.title">Nota</span> {{nota.id}}</h2>
+    <h2><span jhiTranslate="aula3App.nota.detail.title">Nota</span> {{nota.id}}</h2>
     <hr>
     <jhi-alert-error></jhi-alert-error>
     <dl class="row-md jh-entity-details">
-        <dt><span jhiTranslate="aawAula3App.nota.valor">Valor</span></dt>
+        <dt><span jhiTranslate="aula3App.nota.valor">Valor</span></dt>
         <dd>
             <span>{{nota.valor}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.nota.dataAvaliacao">Data Avaliacao</span></dt>
+        <dt><span jhiTranslate="aula3App.nota.dataAvaliacao">Data Avaliacao</span></dt>
         <dd>
             <span>{{nota.dataAvaliacao}}</span>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.nota.aluno">Aluno</span></dt>
+        <dt><span jhiTranslate="aula3App.nota.aluno">Aluno</span></dt>
         <dd>
             <div *ngIf="nota.aluno">
                 <a [routerLink]="['/aluno', nota.aluno?.id]">{{nota.aluno?.id}}</a>
             </div>
         </dd>
-        <dt><span jhiTranslate="aawAula3App.nota.atividade">Atividade</span></dt>
+        <dt><span jhiTranslate="aula3App.nota.atividade">Atividade</span></dt>
         <dd>
             <div *ngIf="nota.atividade">
                 <a [routerLink]="['/atividade', nota.atividade?.id]">{{nota.atividade?.id}}</a>

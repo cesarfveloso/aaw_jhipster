@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { Observable } from 'rxjs/Rx';
 import { Headers } from '@angular/http';
 
-import { AawAula3TestModule } from '../../../test.module';
+import { Aula3TestModule } from '../../../test.module';
 import { NotaComponent } from '../../../../../../main/webapp/app/entities/nota/nota.component';
 import { NotaService } from '../../../../../../main/webapp/app/entities/nota/nota.service';
 import { Nota } from '../../../../../../main/webapp/app/entities/nota/nota.model';
@@ -17,7 +17,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [AawAula3TestModule],
+                imports: [Aula3TestModule],
                 declarations: [NotaComponent],
                 providers: [
                     NotaService

@@ -9,8 +9,6 @@ import { JhiEventManager, JhiAlertService } from 'ng-jhipster';
 import { Usuario } from './usuario.model';
 import { UsuarioPopupService } from './usuario-popup.service';
 import { UsuarioService } from './usuario.service';
-import { Aluno, AlunoService } from '../aluno';
-import { Professor, ProfessorService } from '../professor';
 import { Permissao, PermissaoService } from '../permissao';
 import { ResponseWrapper } from '../../shared';
 
@@ -23,18 +21,12 @@ export class UsuarioDialogComponent implements OnInit {
     usuario: Usuario;
     isSaving: boolean;
 
-    alunos: Aluno[];
-
-    professors: Professor[];
-
     permissaos: Permissao[];
 
     constructor(
         public activeModal: NgbActiveModal,
         private jhiAlertService: JhiAlertService,
         private usuarioService: UsuarioService,
-        private alunoService: AlunoService,
-        private professorService: ProfessorService,
         private permissaoService: PermissaoService,
         private eventManager: JhiEventManager
     ) {
@@ -42,32 +34,6 @@ export class UsuarioDialogComponent implements OnInit {
 
     ngOnInit() {
         this.isSaving = false;
-        this.alunoService
-            .query({filter: 'usuario-is-null'})
-            .subscribe((res: ResponseWrapper) => {
-                if (!this.usuario.aluno || !this.usuario.aluno.id) {
-                    this.alunos = res.json;
-                } else {
-                    this.alunoService
-                        .find(this.usuario.aluno.id)
-                        .subscribe((subRes: Aluno) => {
-                            this.alunos = [subRes].concat(res.json);
-                        }, (subRes: ResponseWrapper) => this.onError(subRes.json));
-                }
-            }, (res: ResponseWrapper) => this.onError(res.json));
-        this.professorService
-            .query({filter: 'usuario-is-null'})
-            .subscribe((res: ResponseWrapper) => {
-                if (!this.usuario.professor || !this.usuario.professor.id) {
-                    this.professors = res.json;
-                } else {
-                    this.professorService
-                        .find(this.usuario.professor.id)
-                        .subscribe((subRes: Professor) => {
-                            this.professors = [subRes].concat(res.json);
-                        }, (subRes: ResponseWrapper) => this.onError(subRes.json));
-                }
-            }, (res: ResponseWrapper) => this.onError(res.json));
         this.permissaoService.query()
             .subscribe((res: ResponseWrapper) => { this.permissaos = res.json; }, (res: ResponseWrapper) => this.onError(res.json));
     }
@@ -104,14 +70,6 @@ export class UsuarioDialogComponent implements OnInit {
 
     private onError(error: any) {
         this.jhiAlertService.error(error.message, null, null);
-    }
-
-    trackAlunoById(index: number, item: Aluno) {
-        return item.id;
-    }
-
-    trackProfessorById(index: number, item: Professor) {
-        return item.id;
     }
 
     trackPermissaoById(index: number, item: Permissao) {

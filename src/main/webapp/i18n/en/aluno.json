@@ -1,5 +1,5 @@
 {
-    "aawAula3App": {
+    "aula3App": {
         "aluno" : {
             "home": {
                 "title": "Alunos",
@@ -23,7 +23,6 @@
             "falta": "Falta",
             "nota": "Nota",
             "entrega": "Entrega",
-            "usuario": "Usuario",
             "turma": "Turma"
         }
     }

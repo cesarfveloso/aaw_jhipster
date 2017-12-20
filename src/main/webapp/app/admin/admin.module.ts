@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { AawAula3SharedModule } from '../shared';
+import { Aula3SharedModule } from '../shared';
 /* jhipster-needle-add-admin-module-import - JHipster will add admin modules imports here */
 
 import {
@@ -32,7 +32,7 @@ import {
 
 @NgModule({
     imports: [
-        AawAula3SharedModule,
+        Aula3SharedModule,
         RouterModule.forChild(adminState),
         /* jhipster-needle-add-admin-module - JHipster will add admin modules here */
     ],
@@ -70,4 +70,4 @@ import {
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AawAula3AdminModule {}
+export class Aula3AdminModule {}

@@ -1,5 +1,5 @@
 {
-    "aawAula3App": {
+    "aula3App": {
         "disciplina" : {
             "home": {
                 "title": "Disciplinas",
@@ -20,9 +20,7 @@
             "sigla": "Sigla",
             "ementa": "Ementa",
             "creditos": "Creditos",
-            "atividade": "Atividade",
-            "professor": "Professor",
-            "disciplina": "Disciplina"
+            "atividade": "Atividade"
         }
     }
 }

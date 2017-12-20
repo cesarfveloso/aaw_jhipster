@@ -4,7 +4,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs/Rx';
 import { JhiEventManager } from 'ng-jhipster';
 
-import { AawAula3TestModule } from '../../../test.module';
+import { Aula3TestModule } from '../../../test.module';
 import { DisciplinaDeleteDialogComponent } from '../../../../../../main/webapp/app/entities/disciplina/disciplina-delete-dialog.component';
 import { DisciplinaService } from '../../../../../../main/webapp/app/entities/disciplina/disciplina.service';
 
@@ -19,7 +19,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [AawAula3TestModule],
+                imports: [Aula3TestModule],
                 declarations: [DisciplinaDeleteDialogComponent],
                 providers: [
                     DisciplinaService

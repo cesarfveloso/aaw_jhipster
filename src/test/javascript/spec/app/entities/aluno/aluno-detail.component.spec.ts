@@ -2,7 +2,7 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { Observable } from 'rxjs/Rx';
 
-import { AawAula3TestModule } from '../../../test.module';
+import { Aula3TestModule } from '../../../test.module';
 import { AlunoDetailComponent } from '../../../../../../main/webapp/app/entities/aluno/aluno-detail.component';
 import { AlunoService } from '../../../../../../main/webapp/app/entities/aluno/aluno.service';
 import { Aluno } from '../../../../../../main/webapp/app/entities/aluno/aluno.model';
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [AawAula3TestModule],
+                imports: [Aula3TestModule],
                 declarations: [AlunoDetailComponent],
                 providers: [
                     AlunoService

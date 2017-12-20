@@ -1,7 +1,7 @@
 <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
 
     <div class="modal-header">
-        <h4 class="modal-title" id="myAlunoLabel" jhiTranslate="aawAula3App.aluno.home.createOrEditLabel">Create or edit a Aluno</h4>
+        <h4 class="modal-title" id="myAlunoLabel" jhiTranslate="aula3App.aluno.home.createOrEditLabel">Create or edit a Aluno</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                 (click)="clear()">&times;</button>
     </div>
@@ -13,33 +13,33 @@
                    [(ngModel)]="aluno.id" readonly />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.aluno.nome" for="field_nome">Nome</label>
+            <label class="form-control-label" jhiTranslate="aula3App.aluno.nome" for="field_nome">Nome</label>
             <input type="text" class="form-control" name="nome" id="field_nome"
                 [(ngModel)]="aluno.nome" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.aluno.tipoIngresso" for="field_tipoIngresso">Tipo Ingresso</label>
+            <label class="form-control-label" jhiTranslate="aula3App.aluno.tipoIngresso" for="field_tipoIngresso">Tipo Ingresso</label>
             <input type="text" class="form-control" name="tipoIngresso" id="field_tipoIngresso"
                 [(ngModel)]="aluno.tipoIngresso" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.aluno.bolsista" for="field_bolsista">Bolsista</label>
+            <label class="form-control-label" jhiTranslate="aula3App.aluno.bolsista" for="field_bolsista">Bolsista</label>
             <input type="checkbox" class="form-control" name="bolsista" id="field_bolsista"
                 [(ngModel)]="aluno.bolsista" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.aluno.dataIngresso" for="field_dataIngresso">Data Ingresso</label>
+            <label class="form-control-label" jhiTranslate="aula3App.aluno.dataIngresso" for="field_dataIngresso">Data Ingresso</label>
             <input type="text" class="form-control" name="dataIngresso" id="field_dataIngresso"
                 [(ngModel)]="aluno.dataIngresso" />
         </div>
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.aluno.observacoes" for="field_observacoes">Observacoes</label>
+            <label class="form-control-label" jhiTranslate="aula3App.aluno.observacoes" for="field_observacoes">Observacoes</label>
             <input type="text" class="form-control" name="observacoes" id="field_observacoes"
                 [(ngModel)]="aluno.observacoes" />
         </div>
 
         <div class="form-group">
-            <label class="form-control-label" jhiTranslate="aawAula3App.aluno.turma" for="field_turma">Turma</label>
+            <label class="form-control-label" jhiTranslate="aula3App.aluno.turma" for="field_turma">Turma</label>
             <select class="form-control" id="field_turma" name="turma" [(ngModel)]="aluno.turma" >
                 <option [ngValue]="null"></option>
                 <option [ngValue]="turmaOption.id === aluno.turma?.id ? aluno.turma : turmaOption" *ngFor="let turmaOption of turmas; trackBy: trackTurmaById">{{turmaOption.id}}</option>

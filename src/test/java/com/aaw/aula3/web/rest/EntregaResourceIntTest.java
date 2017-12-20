@@ -1,6 +1,6 @@
 package com.aaw.aula3.web.rest;
 
-import com.aaw.aula3.AawAula3App;
+import com.aaw.aula3.Aula3App;
 
 import com.aaw.aula3.domain.Entrega;
 import com.aaw.aula3.repository.EntregaRepository;
@@ -35,7 +35,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see EntregaResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = AawAula3App.class)
+@SpringBootTest(classes = Aula3App.class)
 public class EntregaResourceIntTest {
 
     private static final String DEFAULT_DATA_ENTREGA = "AAAAAAAAAA";
