@@ -1,0 +1,24 @@
+{
+    "aawAula3App": {
+        "aula" : {
+            "home": {
+                "title": "Aulas",
+                "createLabel": "Criar novo Aula",
+                "createOrEditLabel": "Criar ou editar Aula"
+            },
+            "created": "Um novo Aula foi criado com o identificador {{ param }}",
+            "updated": "Um Aula foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Aula foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Aula {{ id }}?"
+            },
+            "detail": {
+                "title": "Aula"
+            },
+            "horarioInicial": "Horario Inicial",
+            "horarioFinal": "Horario Final",
+            "falta": "Falta",
+            "turma": "Turma"
+        }
+    }
+}

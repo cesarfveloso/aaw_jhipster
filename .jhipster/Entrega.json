@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "aluno",
+            "otherEntityName": "aluno",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "atividade",
+            "otherEntityName": "atividade",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dataEntrega",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "entregaNoPrazo",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20171220204949",
+    "entityTableName": "entrega",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

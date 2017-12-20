@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "aluno",
+            "otherEntityName": "aluno",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "aula",
+            "otherEntityName": "aula",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "data",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "abono",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "motivo",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171220204944",
+    "entityTableName": "falta",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

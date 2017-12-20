@@ -1,0 +1,52 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "atividade",
+            "otherEntityName": "atividade",
+            "otherEntityRelationshipName": "disciplina"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "professor",
+            "otherEntityName": "professor",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "disciplina",
+            "otherEntityName": "professor",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "professor"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cargaHoraria",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "sigla",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ementa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "creditos",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20171220204950",
+    "entityTableName": "disciplina",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

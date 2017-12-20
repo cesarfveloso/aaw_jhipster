@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "aluno",
+            "otherEntityName": "aluno",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "usuario"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "professor",
+            "otherEntityName": "professor",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "usuario"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "permissao",
+            "otherEntityName": "permissao",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "cpf",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ativo",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20171220204942",
+    "entityTableName": "usuario",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

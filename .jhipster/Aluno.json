@@ -1,0 +1,64 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "falta",
+            "otherEntityName": "falta",
+            "otherEntityRelationshipName": "aluno"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "nota",
+            "otherEntityName": "nota",
+            "otherEntityRelationshipName": "aluno"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "entrega",
+            "otherEntityName": "entrega",
+            "otherEntityRelationshipName": "aluno"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "usuario",
+            "otherEntityName": "usuario",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "aluno"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "turma",
+            "otherEntityName": "turma",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tipoIngresso",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "bolsista",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "dataIngresso",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "observacoes",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171220204943",
+    "entityTableName": "aluno",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

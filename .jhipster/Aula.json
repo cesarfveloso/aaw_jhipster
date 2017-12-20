@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "falta",
+            "otherEntityName": "falta",
+            "otherEntityRelationshipName": "aula"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "turma",
+            "otherEntityName": "turma",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "horarioInicial",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "horarioFinal",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171220204946",
+    "entityTableName": "aula",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

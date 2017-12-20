@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "aluno",
+            "otherEntityName": "aluno",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "atividade",
+            "otherEntityName": "atividade",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "valor",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "dataAvaliacao",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171220204945",
+    "entityTableName": "nota",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

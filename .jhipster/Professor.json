@@ -1,0 +1,46 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "disciplina",
+            "otherEntityName": "disciplina",
+            "otherEntityRelationshipName": "professor"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "disciplina",
+            "relationshipName": "professor",
+            "otherEntityName": "disciplina",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "usuario",
+            "otherEntityName": "usuario",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "professor"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tituloFormacao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "areaConhecimento",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171220204947",
+    "entityTableName": "professor",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}
